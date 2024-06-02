@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        const jantar = +prompt("Digite o valor do jantar.\n\nSEPARE OS CENTAVOS COM .")
+        const taxaGarcom = +prompt("Digite o % de gorgeta do garçom")
+        const percentualGarcom = taxaGarcom / 100
+        const valorGarcom = jantar * percentualGarcom 
+        const valorTotal = jantar + valorGarcom
+        alert(`Valor do garçom: ${valorGarcom.toFixed(2)}\nValor total: ${valorTotal}`)
+    </script>
+</body>
+
+</html>
