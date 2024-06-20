@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exemplo 2.1</title>
+    <style type="text/css">
+      div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      input {
+        border-radius: 3px;
+        width: -webkit-fill-available;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <h1>Revenda de veiculos</h1>
+      <form>
+        <p>
+          Veiculo:
+          <input type="text" name="" id="inVeiculo" required />
+        </p>
+        <p>
+          Preço R$:
+          <input type="number" name="" id="inPreco" required />
+        </p>
+        <p>
+          <input type="submit" value="Ver promoção" />
+        </p>
+        <h3 id="outResp1"></h3>
+        <h3 id="outResp1"></h3>
+        <h3 id="outResp1"></h3>
+      </form>
+    </div>
+    <script src="/cap02/ex2_3.js"></script>
+  </body>
+</html>
