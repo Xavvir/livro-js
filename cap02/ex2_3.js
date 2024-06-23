@@ -5,7 +5,7 @@ const resp3 = document.querySelector("#outResp3");
 
 form.addEventListener("submit", (e) => {
   const veiculo = form.inVeiculo.value; //obtem dados dos campos
-  const preco = Number(form.inPreco.value);
+  const preco = +(form.inPreco.value);
 
   const entrada = preco * 0.5; //calcula valor de entrada
   const parcelado = (preco * 0.5) / 12; //calcula valor das parcelas
@@ -15,4 +15,4 @@ form.addEventListener("submit", (e) => {
   resp3.innerText = `+12x de R$: ${parcelado.toFixed(2)}`;
 
   e.preventDefault();
-});
+}); 
