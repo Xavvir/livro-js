@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exemplo 2.1</title>
+    <style type="text/css">
+      div {
+        background-color: rgba(182, 53, 38, 0.767);
+        padding: 25px;
+        display: flex;
+        width: 32rem;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        border: rgb(74, 7, 0) solid;
+        border-radius: 25px;
+      }
+
+      h3,
+      h1,
+      h4 {
+        background-color: rgb(74, 7, 0);
+        height: auto;
+        width: auto;
+        padding: 0 15px 0;
+        color: white;
+        border-radius: 20rem;
+      }
+
+      div h1,
+      p {
+        background-color: rgb(74, 7, 0);
+        width: 100%;
+        color: white;
+        border-radius: 20rem;
+      }
+
+      input {
+        border: solid rgb(74, 7, 0);
+        padding: 10px;
+        border-radius: 35px;
+        width: -webkit-fill-available;
+      }
+
+      .envio {
+        margin: 5px;
+        padding: 3px;
+        width: auto;
+      }
+    </style>
+    <link
+      rel="shortcut icon"
+      href="/cap04/Imagens/frutas.png"
+      type="image/x-icon"
+    />
+  </head>
+
+  <body>
+    <span style="text-align: -webkit-center">
+      <div>
+        <h1>Calculadora de peso ideal:</h1>
+        <form>
+          <p>
+            Nome:
+            <input type="text" name="" id="inNome" required />
+          </p>
+          <p
+            style="
+              display: flex;
+              padding: 7px 15px 7px;
+              width: auto;
+              flex-direction: column;
+              gap: 10px;
+            "
+          >
+            Sexo:
+            <label style="display: flex; flex-direction: row; gap: 10px">
+              <input type="radio" name="sexo" id="inMasculino" required />
+              Masculino
+              <input type="radio" name="sexo" id="inFeminino" required />
+              Feminino
+            </label>
+          </p>
+          <p>
+            Altura:
+            <input
+              type="number"
+              name=""
+              id="inAltura"
+              step="0.01"
+              min="0"
+              required
+            />
+          </p>
+          <input
+            class="envio"
+            style="background-color: green; color: white"
+            type="submit"
+            id="submit"
+            value="Calcular peso ideal"
+          />
+          <input
+            class="envio"
+            style="background-color: red; color: white"
+            type="reset"
+            id="reset"
+            value="Limpar campos"
+          />
+          <h3 id="outResp1"></h3>
+        </form>
+      </div>
+    </span>
+    <script src="/cap04/js/ex4_2.js"></script>
+  </body>
+</html>
