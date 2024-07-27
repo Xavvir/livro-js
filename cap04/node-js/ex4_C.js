@@ -3,20 +3,23 @@ const prompt = require("prompt-sync")();
 const valor = Number(prompt("Valor: "));
 
 if (valor < 1) {
-    console.log("Valor insuficiente")
+    console.log("Valor insuficiente(Mínimo R$ 1.00)")
     return
-} else if (valor > 1 || valor < 1.74) {
-    base = 1
-    tempo = 30
-    troco = valor - base
-    console.log(`Tempo: ${tempo} minutos`)
-    console.log(`Troco: R$ ${troco.toFixed(2)}`)
-} else if (valor > 1.75 || valor < 3) {
-    base1 = 1.75
-    tempo1 = 60
-    troco1 = valor - base1
-    console.log(`Tempo: ${tempo1} minutos`)
-    console.log(`Troco: R$ ${troco1.toFixed(2)}`)
 }
 
+let tempo
+let troco
 
+if (valor >= 3.00) {
+    tempo = 120
+    troco = valor - 3.00
+} else if (valor >= 1.75) {
+    tempo = 60
+    troco = valor - 1.75
+} else {
+    tempo = 30
+    troco = valor - 1.00
+}
+
+console.log(`Tempo ${tempo} minutos`)
+console.log(`Troco R$: ${troco.toFixed(2 )}`)
