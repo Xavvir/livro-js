@@ -5,7 +5,7 @@ form.addEventListener("submit", (e) => {
   e.preventDefault()
 
   const numero = Number(form.inNumero.value)
-  let resposta = ""
+  let resposta = "" // transforma em string
 
   for (let i = 1; i <= 10; i++) {
     // resposta = resposta + numero + " X " + i + " = " + (numero * i) + "/n"
