@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exemplo 2.1</title>
+  <style type="text/css">
+    div {
+      background-color: rgba(182, 53, 38, 0.767);
+      padding: 25px;
+      display: flex;
+      width: 32rem;
+      flex-direction: column;
+      align-items: center;
+      text-align: justify;
+      border: rgb(74, 7, 0) solid;
+      border-radius: 25px;
+    }
+
+    h1{
+      border-bottom-style:inset
+    }
+
+    /* h3, h1, h4{
+      background-color: rgb(74, 7, 0);
+      width: auto;
+      padding: 0 15px 0;
+      color: white;
+      border-radius: 20rem;
+    } */
+/* 
+    div h1,
+    p {
+      background-color: rgb(74, 7, 0);
+      width: 100%;
+      color: white;
+      border-radius: 20rem;
+    } */
+
+    input {
+      border: solid rgb(74, 7, 0);
+      padding: 10px;
+      border-radius: 35px;
+      width: -webkit-fill-available;
+    }
+  </style>
+</head>
+
+<body>
+  <span style="text-align: -webkit-center;">
+    <div>
+      <h1>Tabuada</h1>
+      <form>
+         <p>
+          Número:
+          <input type="number" id="inNumero" required />
+        </p>
+        <!--<p>
+          Nota 1:
+          <input type="number" name="" id="inNota1" step="0.1" min="0" required />
+        </p>
+        <p>
+          Nota 2:
+          <input type="number" name="" id="inNota2" step="0.1" min="0" required />
+        </p>-->
+        <p>
+          <input type="submit" id="submit" value="Verificar tabuada" />
+        </p> 
+        <!-- <h4 id="outResp2"></h4> -->
+      </form>
+      <pre></pre>
+    </div>
+  </span>
+  <script src="/cap05/js/ex5_1.js"></script>
+</body>
+
+</html>
