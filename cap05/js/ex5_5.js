@@ -16,7 +16,7 @@ form.addEventListener("submit", (e) => {
   valorContas += valor
   resposta = resposta + descricao + " - R$: " + valor.toFixed(2) + "\n"
   resp1.innerText = `${resposta} ---------------------------------`
-  resp2.innerText = `${numContas} Conta(s) - Total R$: ${valorContas}`
+  resp2.innerText = `${numContas} Conta(s) - Total R$: ${valorContas.toFixed(2)}`
 
   form.inDescricao.value = ""
   form.inValor.value = ""
