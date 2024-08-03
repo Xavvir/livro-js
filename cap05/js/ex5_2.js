@@ -8,13 +8,24 @@ form.addEventListener("submit", (e) => {
 
   resposta = `Entre ${numero} e 1: `;
 
-  for (let i = numero; i > 0; i--) {
-    if (i == 1) {
-      resposta = resposta + i + ". ";
-    } else {
-      resposta = resposta + i + ", ";
-    }
-  }
+  //   for (let i = numero; i > 0; i--) {
+  //     if (i == 1) {
+  //       resposta = resposta + i + ". ";
+  //     } else {
+  //       resposta = resposta + i + ", ";
+  //     }
+  //   }
 
-  resp.innerText = resposta;
+  // for (let i = numero; i > 1; i--) {
+  //     resposta = resposta + i + ", "
+  // }
+
+    let i = numero
+
+    while (i > 1){
+      resposta = resposta + i + ", "
+      i--
+    }
+
+  resp.innerText = resposta + "1.";
 });
