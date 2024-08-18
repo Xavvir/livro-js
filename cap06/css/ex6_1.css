@@ -1,0 +1,81 @@
+div {
+  background-color: rgba(182, 53, 38, 0.767);
+  padding: 25px;
+  display: flex;
+  width: auto;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  border: rgb(74, 7, 0) solid;
+  border-radius: 25px;
+  gap: 12px;
+  justify-content: space-evenly
+}
+
+#btUrgencia{
+  background-color: brown;
+  color: white;
+  font-weight: bold;
+}
+
+#btAtender{
+  background-color: green;
+  color: white;
+  font-weight: bold;
+}
+
+.fonte-azul {
+  color: rgb(236, 78, 78);
+}
+
+.oculta {
+  display: none;
+}
+
+pre {
+  font-size: 1.2em;
+}
+
+.italico {
+  font-style: italic;
+}
+
+.exibe {
+  display: inline;
+}
+
+img {
+  width: 420px;
+  height: 300px;
+}
+
+h1 {
+  border-bottom-style: inset
+}
+
+h3,
+h1,
+h4 {
+  background-color: rgb(74, 7, 0);
+  width: auto;
+  padding: 0 15px 0;
+  color: white;
+  border-radius: 2rem;
+}
+
+div h1,
+p {
+  background-color: rgb(74, 7, 0);
+  width: 100%;
+  color: white;
+  border-radius: 20rem;
+}
+
+input {
+  border: solid rgb(74, 7, 0);
+  padding: 5px;
+  border-radius: 35px;
+  width: fit-content;
+  margin: 3px;
+  cursor: pointer;
+}
