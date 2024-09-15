@@ -1,6 +1,6 @@
 div {
   background-color: rgba(182, 53, 38, 0.767);
-  padding: 25px;
+  padding: 35px;
   display: flex;
   width: auto;
   flex-direction: row;
@@ -65,6 +65,7 @@ h4 {
 
 div h1,
 p {
+  padding: 7px;
   background-color: rgb(74, 7, 0);
   width: 100%;
   color: white;
